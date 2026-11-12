@@ -86,7 +86,7 @@ window.QUIZ_QUESTIONS = [
   },
   {
     topic: 'The bigger picture',
-    question: 'According to Movember, about how many years earlier do men die than women on average?',
+    question: 'About how many years earlier do men die than women on average?',
     options: ['2 years', '5 years', '8 years', '10 years'],
     answer: 1,
     explanation: 'About five years. Movember highlights that men are dying younger, often for largely preventable reasons — a gap the movement wants to close.',

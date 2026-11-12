@@ -1,6 +1,6 @@
 // Source template. Run `npm run build` after editing questions or this file.
 // It generates the standalone quiz/_worker.js supported by Pages Direct Upload.
-const QUIZ = {"id":"02bbf3d30fd65695ac8c","answerKey":[1,3,0,2,2,1,2,1,2,0],"optionCounts":[4,4,4,4,4,4,4,4,4,4]};
+const QUIZ = {"id":"40966ac2f064b51bdf0b","answerKey":[1,3,0,2,2,1,2,1,2,0],"optionCounts":[4,4,4,4,4,4,4,4,4,4]};
 const TOKEN = /^[a-f0-9]{64}$/;
 
 function json(data, status = 200) {
