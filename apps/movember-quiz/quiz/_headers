@@ -1,0 +1,4 @@
+/_worker.js
+  X-Robots-Tag: noindex
+/api/*
+  Cache-Control: no-store

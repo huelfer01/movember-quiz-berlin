@@ -1,0 +1,38 @@
+{
+    "name": "movember-quiz",
+    "$schema": "../../node_modules/nx/schemas/project-schema.json",
+    "projectType": "application",
+    "sourceRoot": "apps/movember-quiz",
+    "tags": [],
+    "targets": {
+        "build": {
+            "executor": "nx:run-commands",
+            "outputs": ["{workspaceRoot}/dist/apps/movember-quiz"],
+            "options": { "command": "npm --prefix apps/movember-quiz run build" }
+        },
+        "serve": {
+            "executor": "nx:run-commands",
+            "options": { "command": "npm --prefix apps/movember-quiz run dev" }
+        },
+        "test": {
+            "executor": "nx:run-commands",
+            "options": {
+                "commands": [
+                    "npm --prefix apps/movember-quiz test",
+                    "npm --prefix apps/movember-quiz run test:unit"
+                ],
+                "parallel": false
+            }
+        },
+        "typecheck": {
+            "executor": "nx:run-commands",
+            "options": { "command": "tsc --project apps/movember-quiz/tsconfig.json --noEmit" }
+        },
+        "lint": {
+            "executor": "nx:run-commands",
+            "options": {
+                "command": "eslint apps/movember-quiz/server/src apps/movember-quiz/scripts/build.ts apps/movember-quiz/test --max-warnings 0"
+            }
+        }
+    }
+}
